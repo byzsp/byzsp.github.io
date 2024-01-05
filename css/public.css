@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+@font-face {
+    font-family: "myFont1";
+    src: url("../fonts/abc.ttf");
+}
+@font-face {
+    font-family: "myFont2";
+    src: url("../fonts/bcd.ttf");
+}
+@font-face {
+    font-family: "myFont3";
+    src: url("../fonts/efg.ttf");
+}
+body{
+   position: relative;
+}
+.home{
+    width: 80%;
+    min-width: 1215px;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+b{
+    color: #d23939;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1{
+    font-family: "myFont1";
+    color: red;
+    margin: 30px 0;
+}
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden; 
+    text-align: right;
+    border-bottom: 1px solid gray;
+}
+.scrolling-text span {
+    font-family: myFont2;
+    display: inline-block; 
+    animation: scrolling-text 30s linear infinite;
+}
+@keyframes scrolling-text {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+/* main */
+main{
+    position: relative;
+}
+main .left{
+    position: absolute;
+    left: 0;
+    width: 65%;
+    /* overflow: hidden; */
+    /* background: skyblue; */
+}
+
+main .right{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    padding: 12px 18px 24px 18px;
+    border: 1px solid rgba(200, 200, 200, 0.5);
+    border-radius: 4px;
+    width: 30%;
+}
+main .right .name{
+    position: relative;
+    height: 32px;
+    line-height: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+main .right .name::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 32px;
+    display: block;
+    width: 20px;
+    height: 1px;
+    background: gray;
+}
+main .right ul li{
+    height: 24px;
+    line-height: 24px;
+    list-style: none;
+    margin-bottom: 10px;
+    color: #666;
+}
+main .right ul li b{
+    font-size: 18px;
+    width: 28px;
+    display: inline-block;
+}
+main .right ul li span{
+    font-size: 18px;
+    width: 28px;
+    color: gray;
+    display: inline-block;
+}
+main .right ul li a{
+    color: #666666;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 950px;
+}
+footer span{
+    color: #d0cdcd;
+    padding: 50px;
+}
+
+.abc{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 999;
+    background-color: skyblue;
+    opacity: 0.5;
+    animation: shake 0.3s ease-in-out;
+    display: none;
+}
+@keyframes shake {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+.tail {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f00;
+    pointer-events: none;
+}

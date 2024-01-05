@@ -1,0 +1,26 @@
+main .left h2{
+    font-size: 50px;
+    color: #666;
+    font-family: "myFont3";
+    margin: 20px 0;
+}
+main .left p{
+    font-size: 30px;
+    color: #666;
+    font-family: "myFont2";
+    margin: 20px 0;
+}
+main .left span{
+    display: block;
+    margin: 20px 0;
+}
+main .left dt{
+    font-size: 24px;
+    color: #b01e1e;
+}
+main .left dd{
+    font-size: 20px;
+}
+footer{
+    margin-top: 1150px;
+}
